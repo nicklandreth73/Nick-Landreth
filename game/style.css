@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(146, 139, 139);
+}
+body, .quote-input{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    background-color: rgb(50, 58, 175);
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 700px;
+    max-width: 90%;
+}
+.timer{
+    position: absolute;
+    top: 2rem;
+    font-size: 3rem;
+    color: rgb(50, 58, 175);
+    font-weight: bold;
+}
+.quote-display{
+    margin-bottom: 1rem;
+    margin-left: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px);
+    font-size: 1.5rem;
+}
+.quote-input{
+    background-color: transparent;
+    border: 2px solid rgb(47, 47, 148);
+    outline: none;
+    border-radius: .2rem;
+    resize: none;
+    margin: auto;
+    width: 100%;
+    height: 8rem;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+}
+.quote-input:focus{
+    border-color: rgb(22, 22, 73);
+}
+.correct{
+    color: green;
+}
+.incorrect{
+    color: tomato;
+    text-decoration: underline;
+}
+.wpm{
+    position: absolute;
+    top: 5rem;
+    font-size: 3rem;
+    color: rgb(50, 58, 175);
+    font-weight: bold;
+}
+.errors{
+    position: absolute;
+    top: 8rem;
+    font-size: 3rem;
+    color: rgb(50, 58, 175);
+    font-weight: bold;
+}
